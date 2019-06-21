@@ -1,0 +1,188 @@
+﻿@using Microsoft.AspNet.Identity
+@model KershKeepers.ViewModel.CatProvider
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Resturant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet">
+    <link href="../../LayoutResource/LayoutResource1/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/css/animate.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/css/magnific-popup.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/css/aos.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/css/jquery.timepicker.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/fonts/ionicons/css/ionicons.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">*@
+    <link href="../../LayoutResource/LayoutResource1/fonts/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link href="../../LayoutResource/LayoutResource1/css/all.min.css" rel="stylesheet" />
+    <link href="../../Content/toastr.css" rel="stylesheet" />
+
+    <link href="../../LayoutResource/LayoutResource1/css/style.css" rel="stylesheet" />
+    <!-- Theme Style -->
+
+</head>
+<body>
+    
+
+
+<div class="site-wrap">
+
+        <header class="site-header">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-12 text-center">
+                    <a href="/Cart/Home/@User.Identity.GetUserId()" class="site-logo"><i class="fas fa-cart-arrow-down"></i></a>
+                </div>
+            </div>
+        </header>
+
+
+    </div><!-- site-header -->
+
+    <div class="main-wrap">
+        <div class="cover_1">
+            <div class="img_bg" style="background-image: url(../../LayoutResource/LayoutResource1/img/slider-1.jpg);" data-stellar-background-ratio="0.5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12" data-aos="fade-up" style="text-align: center">
+                            @Html.Action("getById", "Provider", new { id = Model.Provider.ProviderId })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .cover_1 -->
+        <div class="section services-section">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-3 col-lg-4" data-aos="fade-up">
+                        <div class="media feature-icon d-block text-center">
+                            <div class="icon">
+                                <span class="flaticon-soup"></span>
+                            </div>
+                            <div class="media-body">
+                                <h3>Quality Cuisine</h3>
+                                <p>All our products are handmade and prepared for your convenience. We only use carefully selected suppliers and have complete confidence in the origin and high standard of all our food.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="media feature-icon d-block text-center">
+                            <div class="icon">
+                                <span class="flaticon-vegetables"></span>
+                            </div>
+                            <div class="media-body">
+                                <h3>Fresh Food</h3>
+                                <p>Our Restaurant offers a dishes and menus prepared with fresh ingredients by our chef and his team. Our menu comprises fresh products </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="media feature-icon d-block text-center">
+                            <div class="icon">
+                                <span class="flaticon-pancake"></span>
+                            </div>
+                            <div class="media-body">
+                                <h3>Friendly Staff</h3>
+                                <p> Our staff is extra-friendly and willing to go the extra mile. . They are employees who are satisfied with their jobs and content in their work environment. Happy, we have well-trained staff </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- .section -->
+
+        <div class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center" data-aos="fade-up">
+                        <h2 class="mb-4">Our Specialties</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum voluptatem odio expedita laborum fugit repudiandae dolorem consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section pt-0 pb-0 " id="con">
+            <div class="menus d-flex bg-light">
+                @Html.Action("GetAll")
+            </div>
+
+        </div>
+
+
+        <!-- .item -->
+
+    </div> <!-- .section -->
+
+    <div class="section">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up">
+                    <h2 class="mb-5 text-center">Menu List with Price</h2>
+                    <ul class="nav site-tab-nav" id="pills-tab" role="tablist">
+                        @foreach (var item in Model.Categories)
+                        {
+
+                            <li class="nav-item">
+
+                                @*<a class="nav-link active" id="pills-breakfast-tab" data-toggle="pill" href='@Url.Action("getByCategories","Meal", new { id=item.CategoryId})' role="tab" aria-controls="pills-breakfast" aria-selected="true">@item.Name</a>*@
+                                @Ajax.ActionLink(item.Name, "getByCategories", ajaxOptions: new AjaxOptions { HttpMethod = "Get", UpdateTargetId = "pills-tabContent" }, routeValues: new { id = item.CategoryId }, htmlAttributes: new { @class = "nav-link active", id = "pills-breakfast-tab" })
+
+                            </li>
+
+                        }
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        @Html.Action("getByCategories", Model.Categories)
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div> <!-- .main-wrap -->
+        <!-- loader -->
+    </div>
+
+<script src="../../LayoutResource/LayoutResource1/js/jquery-3.2.1.min.js"></script>
+<script src="../../Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/popper.min.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/bootstrap.min.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/owl.carousel.min.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/jquery.waypoints.min.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/bootstrap-datepicker.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/jquery.timepicker.min.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/jquery.stellar.min.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/aos.js"></script>
+<script src="../../LayoutResource/LayoutResource1/js/main.js"></script>
+<script src="../../Scripts/toastr.js"></script>
+
+
+    <script>
+        function myFunc2() {
+            toastr.success(' Meal Added successfully To Your Cart!', 'Congratulation for you!!')
+        }
+    </script>
+
+
+</body>
+
+
+</html>

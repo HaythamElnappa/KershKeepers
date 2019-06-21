@@ -1,0 +1,135 @@
+﻿@model IEnumerable<KershKeepers.Models.EFModels.Meal>
+
+
+
+
+<!-- Button trigger modal -->
+
+@{var counter = "popup"; }
+<div id="themeal">
+    @foreach (var item in Model)
+    {
+        counter = counter + counter;
+        <div id="@item.MealId">
+            <div class="border  border-danger rounded-lg  shadow my-4 mx-auto " id="section3">
+                <div class="row mt-2 mx-sm-auto mx-xl-auto">
+                    <div class="col-md-3 ">
+                        <img src="@Url.Content(item.Image)" class="rounded-circle   ml-4" width="150" height="150" />
+                    </div>
+                    <div class="col-md-4 ml-4 ">
+                        <h2 class="gold">Name</h2>
+                        <h4 class="p-color ">@item.Name</h4>
+                    </div>
+                    <div class="col-md-3 ml-4 ">
+                        <h2 class="gold">Category</h2>
+                        <h4 class="p-color ">@item.Category.Name</h4>
+                    </div>
+
+                </div>
+                <hr />
+                <div class="row ml-2">
+                    <div class="col-md-11 ">
+                        <h1 class="gold">Description</h1>
+                    </div>
+                </div>
+                <div class="row ml-2">
+                    <div class="col-md-11 ">
+                        <p class="p-color ">@item.Description</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ml-4">
+                        <h3 class="gold">ExecutionTime</h3>
+                        <p class="p-color ">@item.ExecutionTime</p>
+
+                    </div>
+                    <div class="col-md-3 ml-4">
+                        <h3 class="gold">Price</h3>
+                        <p class="p-color ">@item.Price</p>
+
+                    </div>
+                    <div class=" col-md-4 m-3 float-right">
+
+                        <div class="row">
+                            <div class="  col-md-6 mb-sm-3 mb-xs-3">
+                                <button type="button" class="btn btn-lg btn-warning  glyphicon glyphicon-trash btn-block btn-sm-block " data-toggle="modal" data-target="#@counter"> EDIT  </button>
+                            </div>
+                            <div class="col-md-6">
+                                @Ajax.ActionLink("DELETE ", "Delete","Meal", new { id = item.MealId },
+                                new AjaxOptions
+                                {
+                                    HttpMethod = "get",
+                                    UpdateTargetId= item.MealId.ToString(),
+                                    InsertionMode=InsertionMode.Replace,
+                                    OnSuccess=$"deleteItem(${item.MealId})"
+                                },
+                                new { @class = "btn btn-danger glyphicon glyphicon-trash btn-lg btn-block" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="modal fade  " id="@counter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title gold" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="orderUser">
+                                @Html.Action("Edit", "Meal", routeValues: new { id = item.MealId })
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    }
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+        function deleteItem(item) {
+            $(`#${item}`).remove();
+        }
+
+    </script>
+
+}

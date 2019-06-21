@@ -1,0 +1,64 @@
+﻿@model KershKeepers.Models.EFModels.Area
+
+
+<section class="banner-area relative" id="home">
+    <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-start">
+            <div class="banner-content col-lg-8 col-md-12">
+                <h4 class="text-white text-uppercase">Wide Options of Choice</h4>
+             
+                @using (Html.BeginForm("Search", "Home", "post"))
+                {
+
+
+                <div class="form-group col-md-8" style="padding: 0">
+                    <label for="inputState" style="color: wheat">City</label>
+                    @Html.DropDownListFor(n => n.CityId, ViewBag.cityList as SelectList, htmlAttributes: new { @class = "form-control", @style = "background: none;color: #e48d2c;font-weight: bold;font-size: 20px;", @id = "cityList" })
+                </div>
+                <div class="form-group col-md-8" style="padding: 0">
+                    <label for="inputState" style="color: wheat">Area</label>
+                    @Html.DropDownList("AreaId", ViewBag.areaList as SelectList, htmlAttributes: new { @class = "form-control", @style = "background: none;color: #e48d2c;font-weight: bold;font-size: 20px;", @id = "area" })
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="home food" checked>
+                    <label class="form-check-label" for="exampleRadios1" style="font-size: 23px;color: #e48d2c;">
+                        Home Cooker
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="restaurant">
+                    <label class="form-check-label" for="exampleRadios2" style="font-size: 23px;color: #e48d2c;">
+                        Restaurant
+                    </label>
+                </div>
+                <input type="submit" class="primary-btn header-btn text-uppercase" value="Search" style="margin:15px" />
+                }
+            </div>
+        </div>
+    </div>
+</section>
+@section scripts{
+    <script src="~/Scripts/main.js"></script>
+
+    <script>
+        var url = '@Url.Action("AreasByCityId")';
+        $("#cityList").change(function() {
+            //if (!$(this).val()) {
+            //    console.log("not in");
+            //    return;
+            //}
+            console.log($(this).val());
+            
+            $.getJSON(url, { id: $(this).val() }, function(data) {
+                    $("#area").empty().append($('<option></option>').val('').text("select Area"));
+                    var x = data;
+                    console.log(x);
+                    for (var i = 0; i < x.length; i++) {
+                        console.log(x[i].AreaId);
+                        $("#area").append($(`<option value=${x[i].AreaId}>${x[i].Name}</option>`));
+
+                    }
+                });
+        });
+    </script>
+}

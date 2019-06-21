@@ -1,0 +1,70 @@
+﻿
+@using KershKeepers.Models.EFModels
+@model IEnumerable<KershKeepers.Models.EFModels.OrderDetails>
+
+<div>
+    <h4>OrderDetails</h4>
+    <hr />
+    @foreach (var item in Model)
+    {
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Meal.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Meal.Name)
+
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Order.Provider.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Order.Provider.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Quantity)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Order.TotalPrice)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Order.TotalPrice)
+            </dd>
+
+        </dl>
+    }
+</div>
+@{
+    OrderDetails details = Model.FirstOrDefault();
+
+
+    if (details != null && details.Order.Status == "Delevired" && details.Order.Feedback == null)
+    {
+        using (Html.BeginForm("FeedBack", "Order", FormMethod.Post))
+        {
+            @Html.Hidden("id",details.Order.OrderId)
+            <div class="form-group row">
+                @Html.LabelFor(ww=>details.Order.Feedback, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.TextArea("feedback", htmlAttributes: new { @class = "form-control"})
+                </div>
+            </div>  
+            <input type="submit" value="FeedBack" class="btn btn-primary" />
+        }
+    }
+}
+
+
+
+
+

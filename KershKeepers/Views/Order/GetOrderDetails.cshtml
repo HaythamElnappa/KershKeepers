@@ -1,0 +1,68 @@
+﻿@using KershKeepers.Models.EFModels
+@model IEnumerable<KershKeepers.Models.EFModels.OrderDetails>
+
+<div>
+    <h4>OrderDetails</h4>
+    <hr />
+    @foreach (var item in Model)
+    {
+
+        <dl class="dl-horizontal">
+
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Meal.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Meal.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Order.UserId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Order.UserId)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Quantity)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Rate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Rate)
+            </dd>
+
+        </dl>
+    }
+</div>
+@{
+    OrderDetails details = Model.FirstOrDefault();
+}
+@if (details != null && details.Order.Status == "Pending")
+{
+    <p>
+        @Html.ActionLink("Rejected", "OrderRej", "Order", new {  id = details.Order.OrderId  },htmlAttributes:new {@class="btn btn-danger"}) 
+        @Html.ActionLink("Accepted", "OrderAccepted", "Order", new { id = details.Order.OrderId }, htmlAttributes: new { @class = "btn btn-primary" })
+    </p>
+}
+else if (details != null && details.Order.Status == "Accepted")
+{
+    <p>
+        @Html.ActionLink("Deleveried", "OrderDelevired","Order", new { id = details.Order.OrderId }, htmlAttributes: new { @class = "btn btn-success" })
+        @*@Html.ActionLink("Back to List", "Index")*@
+    </p>
+}
+
+
+
+

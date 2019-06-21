@@ -1,0 +1,12 @@
+﻿@using KershKeepers.Models
+@model ApplicationUser
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmine.cshtml";
+}
+
+<br />
+<div id="Users">
+    @Html.Action("GetAllUsers");
+</div>

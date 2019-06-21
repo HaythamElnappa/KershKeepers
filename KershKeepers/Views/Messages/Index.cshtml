@@ -1,0 +1,12 @@
+﻿@model IEnumerable<KershKeepers.Models.EFModels.Message>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmine.cshtml";
+}
+
+<br />
+<div id="Messages">
+    @Html.Action("getAll");
+</div>
+

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<KershKeepers.Models.EFModels.OrderDetails>
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="card hovercard col-3">
+               
+                    <img src="@Url.Content(item.Meal.Image)" alt="" style="width:100%" />
+
+                    <div class="avatar">
+                        <img src="@Url.Content(item.Meal.Provider.Image)" alt="" />
+                    </div>
+                
+                <div class="info">
+                    <div class="title">
+                        @item.Meal.Name
+                    </div>
+                    <div class="desc">@item.Meal.Price</div>
+                    <div class="desc">@item.Meal.Provider.Name</div>
+                    <div class="desc">@item.Meal.Description</div>
+                </div>
+               @Html.ActionLink("Go To Provider","Index","Meal",routeValues:new { id=item.Meal.ProviderId},htmlAttributes:new { })
+            </div>
+        }
+    </div>
+</div>

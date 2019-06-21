@@ -1,0 +1,178 @@
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\ApplicationInsights.config
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\csc.exe
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\System.Collections.Immutable.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\System.Reflection.Metadata.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\vbc.exe
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\VBCSCompiler.exe
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\roslyn\VBCSCompiler.exe.config
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\KershKeepers.dll.config
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\KershKeepers.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\KershKeepers.pdb
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Antlr3.Runtime.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\EntityFramework.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\EntityFramework.SqlServer.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.DependencyCollector.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.Web.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.WindowsServer.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.ApplicationInsights.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Google.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Web.Infrastructure.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Newtonsoft.Json.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Owin.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Helpers.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Mvc.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Optimization.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Razor.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.WebPages.Deployment.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.WebPages.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.WebPages.Razor.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\WebGrease.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.DependencyCollector.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.Web.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AI.WindowsServer.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.ApplicationInsights.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Helpers.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Mvc.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Optimization.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.Razor.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.WebPages.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.WebPages.Deployment.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\System.Web.WebPages.Razor.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Antlr3.Runtime.pdb
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Newtonsoft.Json.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\EntityFramework.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\EntityFramework.SqlServer.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Google.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.csprojResolveAssemblyReference.cache
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.dll
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.pdb
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.CreateDataBase.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.csproj.GenerateResource.Cache
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.LastModification.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.LastModification2.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.RemoveBirthDate.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.ModifyGender.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.AddIsActivatedToProvider.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.Empty.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.RemoveApplicationUsers.resources
+E:\Full Stack .Net Ismailia\Design\Assignments\Final Project\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.EditArea.resources
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\ApplicationInsights.config
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\csc.exe
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\vbc.exe
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\VBCSCompiler.exe
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\KershKeepers.dll.config
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\KershKeepers.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\KershKeepers.pdb
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Antlr3.Runtime.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\EntityFramework.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\EntityFramework.SqlServer.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.Web.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.ApplicationInsights.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Newtonsoft.Json.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Owin.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Helpers.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Mvc.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Optimization.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Razor.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.WebPages.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.WebPages.Razor.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\WebGrease.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.Web.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.ApplicationInsights.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Helpers.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Mvc.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Optimization.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.Razor.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.WebPages.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\System.Web.WebPages.Razor.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Antlr3.Runtime.pdb
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Newtonsoft.Json.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\EntityFramework.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\EntityFramework.SqlServer.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\obj\Debug\KershKeepers.csprojAssemblyReference.cache
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\obj\Debug\KershKeepers.csproj.CoreCompileInputs.cache
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\obj\Debug\KershKeepers.csproj.CopyComplete
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\obj\Debug\KershKeepers.dll
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\obj\Debug\KershKeepers.pdb
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\obj\Debug\KershKeepers.Migrations.createdp.resources
+C:\Users\hayth\Desktop\ppppppppppppppppppppppppppppppppppppp\Final Project\KershKeepers\obj\Debug\KershKeepers.csproj.GenerateResource.cache

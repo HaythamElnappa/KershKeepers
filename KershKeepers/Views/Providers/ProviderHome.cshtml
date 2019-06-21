@@ -1,0 +1,290 @@
+﻿@model KershKeepers.Models.EFModels.Provider
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Black+Ops+One|Calligraffitti|Dancing+Script|Lobster+Two|Lobster|Yesteryear" rel="stylesheet">
+    <link href="~/Content/Site2.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    <div class="sidebar-wrapper mx-auto">
+        <ul class="nav mx-auto">
+            <li class="nav-item  active ">
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#home" role="tab" aria-controls="v-pills-messages" aria-selected="true">
+
+                    <h5 class="header">HOME</h5>
+                </a>
+            </li>
+            <li class="nav-item   ">
+                <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="v-pills-home" aria-selected="false">
+
+                    <h5 class="header">PROFILE</h5>
+                </a>
+            </li>
+            <li class="nav-item   ">
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#mealss" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                    <h5 class="header">MEALS</h5>
+                </a>
+            </li>
+            <li class="nav-item   ">
+                <a class="nav-link" id="v-pills-order-tab" data-toggle="pill" href="#order" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                    <h5 class="header">Order</h5>
+                </a>
+            </li>
+
+
+            <!-- your sidebar here -->
+        </ul>
+    </div>
+
+
+
+
+    <div class="" id="container">
+        <!-- your content here -->
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="alert  tab-pane fade" id="profile" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div id="profile">
+                    @Html.Action("Details", Model)
+                </div>
+
+                <div class="modal fade  edit " id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="orderUser" >
+
+                                @Html.Action("Edit", "Providers", routeValues: new { id = Model.ProviderId })
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="tab-pane fade" id="mealss" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                @*@Html.Partial("../Meals/ProviderMeals", Model.Meals)*@
+                <button type="button" class="btn btn-block  btn-success mX-3 " data-toggle="modal" data-target="#newmeal">JUST CLICK HERE TO CREATE NEW MEAL </button>
+                <div class="modal fade  " id="newmeal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="createmeal">
+                                @Html.Action("Create", "Meal", routeValues: new { id = Model.ProviderId })
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="mm">
+                    @Html.Action("ProviderMeals", "Meal", routeValues: new { id = Model.ProviderId })
+                </div>
+
+            </div>
+
+
+
+            <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+       @Html.Action("Index","Order",new {id=Model.ProviderId})
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+
+
+
+                    <div id="g1" class="scrollflow -pop -opacity mb-0 ">
+                        <div class="container-fluid mb-0 " id="item-1">
+                            <div class="row">
+                                <div class="align-items-start mt-5 col-lg-5  col-xs-12">
+                                    <h5 class="scrollflow slide-right -opacity text-center display-2">
+                                        KershKeepers<img src="~/Resources/image/burger-logo_1366-144.png" width="150" height="150"/>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class=" container">
+                                <div class="row my-5 ">
+                                    <div class="col-lg-3 col-xs-12"></div>
+
+
+                                    <div class="col-lg-7 col-xs-12 mb-5 p-2" id="art">
+                                        <h1 class=" scrollflow -pop -opacity display-2 text-dark text-center" id="fat">KershKeepers</h1>
+
+                                        <h6 class="text-dark text-center"> Sublime classical ballet at its most heartbreaking and glorious.</h6>
+                                        <p class="lead text-white p-color">Young maiden Odette and her friends are victims of a terrible spell that turns them into swans by day, and only at night do they return to human form. To break the spell, the beautiful Odette must find eternal love.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class=" container-fluid pt-0 mt-0 pb-5 " id="bg2">
+
+                        <div class="scrollflow -pop row mt-0">
+
+                            <div class=" col-lg-5 mb-5 col-xs-12">
+                                <h1 class="scrollflow -slide-left -opacity  display-2 py-5">Evrey one can reach to you</h1>
+                                <h2 class="scrollflow -slide-bottom -opacity text-uppercase mt-5 pt-5">Tickets are limited</h2>
+                                <p class="scrollflow p-color -slide-left -opacity lead "> Tickets for this Regional Queensland Tour will be on sale soon through the individual tour venues - not available as part of Season Ticket packages. </p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class=" container-fluid py-5" id="Alexandra">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <img src="~/Resources/image/food.png" class=" img-fluid mx-auto" width="700" height="522"/>
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
+                                <h3 class="scrollflow -slide-right -opacity display-4 py-5">SHOW THE WORLD WHAT YOU ABLE TO DO.</h3>
+                                <p class="scrollflow -slide-top p-color -opacity lead text-capitalize p-color">please join us in congratulatin soloist and resident choreographer just peck and trincipal danccer alexandra jons, performing hirein peck's four dance episodes</p>
+                            </div>
+                        </div>
+
+                        <div class="scrollflow -slide-right -opacity row  my-5 py-5" id="master">
+                            <div class="col-md-12 col-xs-12 my-4">
+                                <h1 class="scrollflow -slide-top -opacity display-2 text-center my-2">COOKERS</h1>
+                                <p class="scrollflow -slide-top -opacity text-capitalize text-center my-2 p-color lead"> pest maestro in the hole middel east</p>
+                            </div>
+                            <div class="scrollflow -pop -opacity card text-white bg-dark mb-3 mx-auto col-xs-12" style="max-width: 20rem;">
+                                <div class="card-header">
+                                    <img src="~/Resources/image/1540902807241.jpg" class=" img-fluid " height="100"/>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Dark card title</h4>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="scrollflow -slide-top -opacity card text-white bg-dark mb-3 mx-auto col-xs-12" style="max-width: 20rem;">
+                                <div class="card-header">
+                                    <img src="~/Resources/image/jpeg.jpg" class=" img-fluid " height="100"/>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Dark card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+                            <div class="scrollflow -slide-left -opacity   card text-white bg-dark mb-3 mx-auto col-xs-12" style="max-width: 20rem;">
+                                <div class="card-header">
+                                    <img src="~/Resources/image/reem1.jpg" class=" img-fluid " height="100"/>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Dark card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="scrollflow -slide-left -opacity   card text-white bg-dark mb-3 mx-auto col-xs-12" style="max-width: 20rem;">
+                                <div class="card-header">
+                                    <img src="~/Resources/image/the one.jpg" class=" img-fluid " height="100"/>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Dark card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $(window).on('load', function () {
+        $(".overlay").fadeOut(5000, function () {
+
+            $("body").css("overflow", "auto");
+            $('#register').on('submit', function (e) {
+                e.preventDefault();
+                var details = $('#register').serialize();
+
+
+            });
+
+        });
+        function myfun1() {
+            $(".createmeal").modal("toggle");
+        //    // $("#edit").modal
+        //    $(".modal-backdrop").hide();
+
+
+        //    //$(".modal-backdrop").fadeToggle();
+        //    // $('#edit').modal('toggle');
+        //    // $('body').toggleClass('modal-open');
+        //    // $('.modal-backdrop').remove();
+        //    //$(document.body).removeClass("modal-open");
+        //    //$(".modal-backdrop").remove();
+        }
+        function myfun2() {
+
+            $("#newmeal").modal("toggle");
+
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+

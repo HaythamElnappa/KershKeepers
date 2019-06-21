@@ -1,0 +1,10 @@
+﻿@model IEnumerable<KershKeepers.Models.EFModels.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmine.cshtml";
+}
+<br />
+<div id="Category">
+    @Html.Action("getAll");
+</div>

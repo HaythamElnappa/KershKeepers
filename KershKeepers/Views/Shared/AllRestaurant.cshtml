@@ -1,0 +1,41 @@
+﻿@model IEnumerable<KershKeepers.Models.EFModels.Provider>
+
+<div class="container" style="width: 75%">
+    <section class="blog-area section-gap" id="blog">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-8">
+                    <div class="title text-center" style="text-align: center">
+                        <h1 class="mb-10">@ViewBag.tit</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              
+               
+                @foreach (var item in Model)
+                {
+
+                <div class="col-lg-3 col-md-6 col-sm-6 single-blog">
+                    <div class="thumb">
+                        <img class="img-fluid" src="@Url.Content(item.Image)" alt="" width="150px" height="150px"/>
+                    </div>
+                    @*<p class="date">10 Jan 2018</p>*@
+                    <a href="/meal/index/@item.ProviderId">
+                        <h4 style="margin-top:8px">
+                            @item.Name
+                        </h4>
+                    </a>
+                    <p>
+                        @item.Address.
+                    </p>
+               
+                </div>
+                }
+
+            </div>
+            </div>
+    </section>
+</div>
+
+		

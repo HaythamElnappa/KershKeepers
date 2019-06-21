@@ -1,0 +1,68 @@
+﻿@model KershKeepers.Models.EFModels.Message
+
+ <div class="container">
+    <h2>Details</h2>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Provider.Name)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Provider.Name)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User.FirstName)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.User.FirstName)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MessageBody)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.MessageBody)
+
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTime)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.DateTime)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IsOpened)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.IsOpened)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDeleted)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.IsDeleted)
+            </td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <td>
+                @*@Ajax.ActionLink("Edit", "Edit", new { id = Model.MessageId }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "Category" }, htmlAttributes: new { @class = "btn btn-primary" }) |*@
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+            
+             </td>
+        </tr>
+    </table>
+</div>

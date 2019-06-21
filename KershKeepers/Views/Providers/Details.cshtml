@@ -1,0 +1,88 @@
+﻿@model KershKeepers.Models.EFModels.Provider
+
+
+<div>
+
+    <div class="container  border border-danger rounded-lg"  id="details">
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <img src="@Url.Content(Model.Image)" class="rounded-circle" width="200" height="200" />
+            </div>
+            <div class=" col-md-9">
+                <h2 class="gold ">Name</h2>
+                <h4 class="p-color ">
+                    @Model.Name
+                </h4>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="gold">
+                    EMAIL
+                </h3>
+                <p class="p-color ">
+                    @Model.Email
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="gold">
+                    PHONE
+                </h3>
+                <p class="p-color ">
+                    @Model.Phone
+                </p>
+            </div>
+            <div class="col-md-4">
+
+                <h3 class="gold">
+                    TYPE
+                </h3>
+
+                <p class="p-color ">
+                    @Model.Type
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="gold">
+                    Work Start Time
+                </h3>
+                <p class="p-color ">
+                    @Model.WorkStartTime
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="gold">
+                    Work Start Time
+                </h3>
+                <p class="p-color ">
+                    @Model.WorkEndTime
+                </p>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-block btn-warning my-5  mb-xs-3 " data-toggle="modal" data-target="#edit"> EDIT  </button>
+                @*@Ajax.ActionLink("Edit", "Providers" ,routeValues: new { id = Model.ProviderId },ajaxOptions:  new AjaxOptions() {HttpMethod="Get",UpdateTargetId= "orderUser",InsertionMode=InsertionMode.Replace,OnSuccess= "myfun1()" })*@
+            </div>
+            @Html.ActionLink("Orders","Index","Order",null,htmlAttributes:new {@class="btn-primary"})
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+    @*@section scripts{
+            <script>
+                function myfun1() {
+                    $("#model").modal("toggle");
+                }
+            </script>
+        }*@

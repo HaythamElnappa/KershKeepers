@@ -1,0 +1,150 @@
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Content/main3.css" rel="stylesheet" />
+    
+    <link href="~/Content/main2.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <link href="~/Content/util.css" rel="stylesheet" />
+ 
+
+    <style>
+        body {
+            padding: 0 !important;
+        }
+
+        .h-full {
+            height: 0 !important;
+        }
+        .gradient1 {
+            position: initial;
+            height: 50px
+                 
+        }
+
+    </style>
+
+
+</head>
+<body style="background-color:#f7f7f7">
+
+    @*__________________________________________________________________________________*@
+    <header>
+        <div class="wrap-menu-header gradient1 trans-0-4">
+            <div class="container h-full">
+                <div class="wrap_header trans-0-3">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+                        </a>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="wrap_menu p-l-45 p-l-0-xl">
+                        <nav class="menu">
+                            <ul class="main_menu">
+                                <li>
+                                    @Html.ActionLink("Home","Index","Home")
+                                </li>
+
+                                <li>
+                                    @Html.ActionLink("Providers","AllProvider","Provider")
+
+                                </li>
+
+                                <li>
+                                    @Html.ActionLink("Most Sales","Index","Meals")
+
+                                </li>
+
+                                <li>
+                                    @if (User.Identity.GetUserId()==null)
+                                    {
+                                        @Html.ActionLink("Orders", "Login", "Account")
+                                    }
+                                    else
+                                    {
+                                        @Html.ActionLink("Orders", "", "", new {id = User.Identity.GetUserId()}, "")
+                                    }
+
+                                </li>
+
+                                <li>
+                                    @{
+                                        if (User.Identity.GetUserId()==null)
+                                        {
+                                            @Html.ActionLink("Cart", "Login", "Account")
+                                        }
+                                        else
+                                        {
+                                            @Html.ActionLink("Cart", "Home", "Cart", new {id = User.Identity.GetUserId()}, "")
+                                        }
+                                    }
+                                   
+
+                                </li>
+                                <li>
+                                    @{
+                                        if(User.IsInRole("Admin"))
+                                        {@Html.ActionLink("Admin", "Index", "Categories", new { id = User.Identity.GetUserId() }, "")}
+                                        @*if (User.Identity.GetUserId() == null)
+                                        {
+                                            @Html.ActionLink(" ", "Login", "Account")
+                                        }
+                                        else
+                                        {
+                                            
+                                        }*@
+                                    }
+
+
+                                </li>
+
+                                @*<li>
+                                    @Html.ActionLink("Login","Login","Account")
+
+                                </li>
+
+                                <li>
+                                    @Html.ActionLink("Register","Register","Account")
+
+                                </li>*@
+                            </ul>
+                            @Html.Partial("_LoginPartial")
+                        </nav>
+                    </div>
+
+                    <!-- Social -->
+                    @*<div class="social flex-w flex-l-m p-r-20">
+                            <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+
+                            <button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+    </header>
+    @*__________________________________________________________________________________*@
+<div class="body">
+    @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

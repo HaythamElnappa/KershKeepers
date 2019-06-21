@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNet.Identity
+@model IEnumerable<KershKeepers.Models.EFModels.Meal>
+
+
+<div class="menus d-flex bg-light">
+    @foreach (var item in Model)
+    {
+
+
+        <div class="d-flex item mb-1 b">
+            <div class="image" style="background-image: url(@Url.Content(item.Image));" data-aos="fade"></div>
+            <div class="text" style="position:relative">
+                <h3>@item.Name</h3>
+                <p style="padding-bottom:40px">@item.Description</p>
+
+
+                <p class="price" style="padding-top:10px;position:absolute;bottom:35px">$@item.Price</p>
+                @{
+                    if (User.Identity.GetUserId() == null)
+                    {
+                        @Html.ActionLink("Add","Login","Account", new { returnUrl = $"/Meal/Index/{item.ProviderId}" }, new { @class= "btn btn - outline - dark", @style = "width: 40 % ; position: absolute; bottom: 10px; right: 70px; color: white"})
+                    }
+                    else
+                    {
+                        @Ajax.ActionLink("Add" ,"AddToCart","Cart",routeValues: new {id = item.MealId },ajaxOptions:
+                            new AjaxOptions {HttpMethod = "Get",OnSuccess = "myFunc2()" },
+                            htmlAttributes:new { @class= "btn btn-outline-dark", @style = "width:40% ; position:absolute;bottom:10px;right:70px;color:white" })
+                    }
+                }
+                
+
+            </div>
+
+        </div>
+        
+
+    }
+
+</div>
+

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<KershKeepers.Models.EFModels.Meal>
+
+@foreach (var item in Model)
+{
+   
+        <div class="tab-pane fade show active" id="@item.CategoryId" role="tabpanel" aria-labelledby="pills-breakfast-tab">
+            <div class="d-block d-md-flex menu-food-item">
+                <div class="text order-1 mb-3">
+                    <h3><a href="#">@item.Name</a></h3>
+                    <p>@item.Description</p>
+                </div>
+                <div class="price order-2">
+                    <strong>@item.Price</strong>
+                </div>
+            </div> <!-- .menu-food-item -->
+
+        </div>
+  
+}
+
+
+
+
